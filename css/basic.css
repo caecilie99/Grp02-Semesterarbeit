@@ -3,163 +3,116 @@
    text color:             black; opacity = "0.5";     Schwarz + Transparent besser als Grau, im Zweifel auf farbigem Hintergrund besser zu sehen
    button text:            white
    background:             white
-   main color:             #FFC006
-   accent color:           #FF5621
+   main color:             #FF5621
+   accent color:           #FFC006
 */
 
 
 
 /*------------ Resets and Overrides ---------------*/
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  box-sizing: inherit;
+}
+
+html, body, main {
+  height: 100%;
 }
 
 
-/*------------ Font and Links ------------*/
-@font-face { font-family: 'LiberationSans'; src: url('../fonts/LiberationSans-Regular.ttf') format('truetype'); }
-@font-face { font-family: 'LiberationSans'; src: url('../fonts/LiberationSans-Italic.ttf') format('truetype'); font-style: italic; }
-@font-face { font-family: 'LiberationSans'; src: url('../fonts/LiberationSans-Bold.ttf') format('truetype'); font-weight: bold; }
-@font-face { font-family: 'LiberationSans'; src: url('../fonts/LiberationSans-BoldItalic.ttf') format('truetype'); font-weight: bold; font-style: italic; }
+/*------------ Fonts and Links ------------*/
+h1 {
+  font-family: Century Gothic, bold;
+}
 
+nav a {
+  text-decoration: none;
+  font-family: Century Gothic, bold;
+}
 
+h2 {
+  font-family: Cambria, cursive;
+}
+
+p {
+  font-family: Calibri, regular;
+  text-decoration: none;
+}
 
 /*------------ Main Layout ------------*/
 
 body{
-  margin: 0 auto;
-  max-width: 60em;
-  background: silver;
-  font-family: LiberationSans, Verdana, sans-serif;
+  max-width: 60%;
 }
 
 header{
-  padding: 0;
-  margin: 0;
-  background: silver;
-}
-nav ul {
-  margin: 0;
-
-
-}
-nav li {
-  list-style: none;
-  display: inline-block;
-  margin: 0;
-  padding:0;
-  text-align: center;
-}
-nav a,
-nav span {
-  display: block;
-  width: 10em;
-  margin: 0.6em 0 0 0;
-  padding: 0.4em;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 5px 10px white inset;
-  color: black;
-  -webkit-transition: all .25s ease-in;
-  transition: all .25s ease-in;
+  width: 100%;
+  height: auto;
 }
 
-footer{
-  padding: 0.3em;
-  background: darkgrey;
+header img {
+  width: 30%;
+  height: auto;
 }
 
-main{
-  padding: 0.4em;
-  background: Gainsboro;
+aside {
+  width: 30%;
+  float: left;
 }
 
-article{
-  margin: 0.3em;
-}
-section{
-  border: 1px solid darkgrey;
-}
-aside{
-  border: 1px solid darkgrey;
-}
-/*------------ Secondary Layout ------------*/
-
-nav ul {
-  margin: 0;
-
-}
-nav li {
-  list-style: none;
-  display: inline-block;
-  margin: 0;
-  padding:0;
-  text-align: center;
-}
-nav a, nav span {
-  display: block;
-  width: 10em;
-  margin: 0.6em 0 0 0;
-  padding: 0.4em;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 5px 10px white inset;
-  color: black;
-  -webkit-transition: all .25s ease-in;
-  transition: all .25s ease-in;
+nav {
+  width: 100%;
+  float: left;
+  height: auto;
 }
 
-nav a:focus, nav a:hover, nav a:active nav span {
+main {
+  width: 70%;
+  float: left;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  float: left;
+  background-color: #FF5621;
   color: white;
-  background-color: DarkOrange;
 }
 
-nav a:focus, nav a:hover {
-  margin-top: 0;
-  padding: 1em 0.4em 0.4em;
+
+/*------------ Navigation ------------*/
+nav li {
+  list-style: none;
+  text-align: center;
+  background-color: #FF5621;
+  color: white;
+  margin: 10% auto;
+  width: 75%;
+  height: 4em;
+  line-height: 4em;
+}
+
+nav a {
+  vertical-align: middle;
+}
+
+nav li:hover {
+  background-color: #FFC006;
 }
 
 /*------------ Form elements ------------*/
 
+form {
+  background-color: #FF5621;
+  color: white;
+  display: inline-block;
+}
+
+input {
+  height: 3em;
+  border: none;
+  margin: 5px;
+}
+
 /*------------ Miscellaneous ------------*/
 
-
-td {
-  text-align: left;
-  vertical-align: top;
-}
-
-
-
-
-a:focus,
-a:hover,
-a:active {
-  color: DarkOrange;
-}
-
-
-img {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: auto;
-}
-h1, h2, h3, p, table {
-  margin: 0.3em
-}
-h1 {
-  font-size: 1.8em;
-}
-h2 {
-  font-size: 1.5em;
-}
-h3 {
-  border-bottom: 1px solid darkgrey;
-  font-size: 1.2em;
-}
-td {
-  text-align: left;
-  vertical-align: top;
-}
