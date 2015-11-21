@@ -1,7 +1,31 @@
+/* ------------ Colour reference chart------------ */
+/* Element                 CSS                         Bemerkung
+   text color:             black; opacity = "0.5";     Schwarz + Transparent besser als Grau, im Zweifel auf farbigem Hintergrund besser zu sehen
+   button text:            white
+   background:             white
+   main color:             #FFC006
+   accent color:           #FF5621
+*/
+
+
+
+/*------------ Resets and Overrides ---------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+/*------------ Font and Links ------------*/
 @font-face { font-family: 'LiberationSans'; src: url('../fonts/LiberationSans-Regular.ttf') format('truetype'); }
 @font-face { font-family: 'LiberationSans'; src: url('../fonts/LiberationSans-Italic.ttf') format('truetype'); font-style: italic; }
 @font-face { font-family: 'LiberationSans'; src: url('../fonts/LiberationSans-Bold.ttf') format('truetype'); font-weight: bold; }
 @font-face { font-family: 'LiberationSans'; src: url('../fonts/LiberationSans-BoldItalic.ttf') format('truetype'); font-weight: bold; font-style: italic; }
+
+
+
+/*------------ Main Layout ------------*/
 
 body{
   margin: 0 auto;
@@ -9,14 +33,10 @@ body{
   background: silver;
   font-family: LiberationSans, Verdana, sans-serif;
 }
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: inherit;
-}
+
 header{
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   background: silver;
 }
 nav ul {
@@ -45,25 +65,6 @@ nav span {
   transition: all .25s ease-in;
 }
 
-a:focus,
-a:hover,
-a:active {
-  color: DarkOrange;
-}
-
-nav a:focus,
-nav a:hover,
-nav a:active
-nav span {
-  color: white;
-  background-color: DarkOrange;
-}
-nav a:focus,
-nav a:hover{
-  margin-top: 0;
-  padding: 1em 0.4em 0.4em;
-}
-
 footer{
   padding: 0.3em;
   background: darkgrey;
@@ -83,9 +84,65 @@ section{
 aside{
   border: 1px solid darkgrey;
 }
+/*------------ Secondary Layout ------------*/
+
+nav ul {
+  margin: 0;
+
+}
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding:0;
+  text-align: center;
+}
+nav a, nav span {
+  display: block;
+  width: 10em;
+  margin: 0.6em 0 0 0;
+  padding: 0.4em;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 5px 10px white inset;
+  color: black;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+nav a:focus, nav a:hover, nav a:active nav span {
+  color: white;
+  background-color: DarkOrange;
+}
+
+nav a:focus, nav a:hover {
+  margin-top: 0;
+  padding: 1em 0.4em 0.4em;
+}
+
+/*------------ Form elements ------------*/
+
+/*------------ Miscellaneous ------------*/
+
+
+td {
+  text-align: left;
+  vertical-align: top;
+}
+
+
+
+
+a:focus,
+a:hover,
+a:active {
+  color: DarkOrange;
+}
+
+
 img {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: auto;
 }
