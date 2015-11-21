@@ -1,0 +1,22 @@
+/* ----------- Stlyes specific to the index.html page --------------*/
+
+*{
+    margin: 0 auto;
+}
+
+/* ----------- Login-Form --------------*/
+
+#login {
+    width: 100%;
+    display: inline-block;
+}
+
+form {
+    width: 60%;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    margin: 5%;
+}
