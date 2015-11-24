@@ -87,7 +87,7 @@ footer {
   float: left;
   background-color: #FF5621;
   color: white;
-  box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -136,6 +136,10 @@ input[type=text], input[type=password] {
   border: none;
   height: 3em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#Submit:active, input[type=button] {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /*------------ Miscellaneous ------------*/

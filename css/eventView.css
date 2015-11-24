@@ -6,6 +6,10 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+.eventPreview img {
+    background-color: white;
+}
+
 h1,p {
     margin: 5%;
 }
