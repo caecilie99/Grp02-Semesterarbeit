@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="autho" content="Birgit, Rebecca, Sandra">
-    <title>Startseite</title>
+    <title>eVenture - macht das Event!</title>
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/index.css">
-
 </head>
+
+
 <body>
 <!-- Kopfbereich mit Logo -->
 <header>
@@ -16,6 +17,7 @@
 </header>
 
 <aside>
+
     <!-- Navigation -->
     <nav>
         <ul>
@@ -23,12 +25,10 @@
             <li><a href="index.html">Startseite</a></li>
             <li><a class="events" id="events">Events</a></li>
             <li><a class="eventView" id="&uuml;versicht" href="html/eventView.html">Event &Uuml;bersicht</a></li>
-
         </ul>
-        <!-- Formular für den Login, login.php wird dadurch aufgerufen-->
-
     </nav>
 
+    <!-- Formular für den Login, login.php wird dadurch aufgerufen-->
     <div id="login">
         <form name="login" method="post" action="login.php">
             <input id="username" name="username" type="text" class="inputField" placeholder="Username">
@@ -38,27 +38,25 @@
         </form>
     </div>
 
-
-
 </aside>
 
-
-
 <main>
+
     <h1>Willkommen</h1>
     <h2>Infos über uns</h2>
     <p>lalalaa</p>
+
 </main>
-<br>
-<!-- Seite fullEvent wird erst angezeigt beim Aufruf des Events -->
-<a class="fullEvent" id="fullEvent" href="html/fullEvent.html">Eventdetail</a>
-<br><br><br><br>
+
 
 <!-- Fussbereich mit Verlinkung zum Impressum und Datenschutz -->
 <footer>
-    <div id="footer"></div>
-    <a class="impressum" id="impressum" href="html/impressum.html">Impressum</a> |
-    <a class="datenschutz" id="datenschutz" href="html/datenschutz.html">Datenschutz</a>
+    <div id="footer">
+        <a class="impressum" id="impressum" href="html/impressum.html">Impressum</a>
+        <a class="datenschutz" id="datenschutz" href="html/datenschutz.html">Datenschutz</a>
+    </div>
 </footer>
+
+
 </body>
 </html>
